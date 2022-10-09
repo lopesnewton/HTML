@@ -5,11 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas </title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      table {
+        width: 300px;
+        border-collapse: collapse;
+      }
+      caption {
+        font-size: 1,5em;
+        font-weight: bolder;
+        padding: 5px;
+        background-color: bisque;
+      }
+      th,td {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      thead, tfoot {
+        background-color: grey;
+        color: white;
+      }
+      td.num {
+        text-align: right;
+      }
+      tbody> tr:nth-child(2n);
+    </style>
 </head>
 <body>
     <h1>Uso de Tabelas Grandes</h1>
      <!--ANATOMIA PARA TABELAS GRANDES
     TABLE
+     CAPTION
        THEAD
           TR, TD, TM
         TBODY
@@ -18,16 +46,49 @@
           TR, TD, TM
     -->
     <table>
+      <caption>Polulação das Unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
-
+            <th scope="col">Estado</th>
+            <th class="tam" scope="col">População</th>
+            <th scope="col">% da População Total</th>
         </thead>
         <tbody>
-
+          <tr>
+            <td>São Paulo</td>
+            <td class="num
+            ">45 262 199</td>
+            <td class="num
+            ">21,9%</td>
+          </tr>
+          <tr>
+            <td>Minas Gerais</td>
+            <td class="num
+            ">19 597 330</td>
+            <td class="num
+            ">10,1%</td>
+          </tr>
+          <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num
+            ">15 989 929</td>
+            <td class="num
+            ">8,2%</td>
+          </tr>
+          <tr>
+            <td>Bahia</td>
+            <td class="num
+            ">14 016 906</td>
+            <td class="num
+            ">7,1%</td>
+          </tr>
         </tbody>
+        
         <tfoot>
-
+          <tr>
+            <th scope="row">Total de Habitantes</th>
+            <td><strong>0000</strong></td>
+            <td><strong>100%</strong></td>
+          </tr>
         </tfoot>
 
     </table>
