@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Tabela 02</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <caption>##</caption>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">area</th>
+                <th scope="col">disciplina</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col">media</th>
+            </tr>
+        </thead>
+        <tbody>
+            <th rowspan="4">exatas</th>
+            <td>matematica</td>
+            <td>00</td>
+            <td>00</td>
+            <td>00</td>
+             <tr>
+                <td>fisica</td>
+                <td>00</td>
+                <td>00</td>
+                <td>00</td>
+             </tr>
+             <tr>
+                <td>quimica</td>
+                <td>00</td>
+                <td>00</td>
+                <td>00</td>
+             </tr>
+             <tr>
+                <td>biologia</td>
+                <td>00</td>
+                <td>00</td>
+                <td>00</td>
+             </tr>           
+            
+            <tr>
+                <th scope="col" colspan="4">media de exatas</th>
+                <td>00</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2" >humanas</th>
+                <td>historia</td>
+                <td>00</td>
+                <td>00</td>
+                <td>00</td>
+            </tr>
+            <tr>
+                <td>geografia</td>
+                <td>00</td>
+                <td>00</td>
+                <td>00</td>
+            </tr>
+            <tr>
+                <th scope="col" colspan="4">medias de humanas</th>
+                <td>00</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
