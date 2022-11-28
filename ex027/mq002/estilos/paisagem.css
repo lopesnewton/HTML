@@ -2,5 +2,6 @@
 /*Aparelho deitado modo lanscape */
 
 body {
-    background-color: chartreuse;
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;
 }
