@@ -12,9 +12,9 @@
 <body>
     <header>
         <h1>Meu Site</h1>
-        <h3><span id="burguer" class="material-symbols-outlined">menu</span></h3>
+        <h3><span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span></h3>
     
-        <menu>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -44,5 +44,14 @@
           'opsz' 48
         }
         </style>
+        <script>
+            function clickMenu() {
+               if (itens.style.display == 'block') {
+                   itens.style.display = 'none'
+               } else {
+                itens.style.display = 'block'
+               }
+            }
+        </script>
 </body>
 </html>
